@@ -27,7 +27,7 @@ void loop()
     }
   }
   else if (count > 0) {
-    if (count == 10) {
+    if (count >= 10) {
       count = 0;
     }
     Keyboard.print(String(count));
