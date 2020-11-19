@@ -1,7 +1,7 @@
 #include "Keyboard.h"
 
-#define counterButton   3
-#define openButton      4
+#define counterButton   4
+#define openButton      3
 byte count = 0;
 bool lastIsOpen = true;
 
@@ -27,6 +27,7 @@ void loop()
     }
   }
   else if (count > 0) {
+    count--;
     if (count >= 10) {
       count = 0;
     }
